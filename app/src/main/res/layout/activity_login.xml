@@ -80,8 +80,6 @@
 
         </android.support.design.widget.TextInputLayout>
 
-
-
         <Button
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
@@ -89,8 +87,7 @@
             android:layout_below="@+id/til_password"
             android:text="Login"
             android:layout_marginTop="30dp"
-            android:textColor="@android:color/white"
-            android:background="@drawable/dialog_btn_next"/>
+            android:textColor="@android:color/white"/>
 
         <Button
             android:id="@+id/btn_signup"
@@ -100,7 +97,6 @@
             android:text="Signup"
             android:layout_marginTop="10dp"
             android:textColor="@color/colorPrimaryDark"
-            android:background="@drawable/signup_button"
             android:layout_marginBottom="10dp"/>
 
         <Button

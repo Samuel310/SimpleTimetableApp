@@ -55,6 +55,9 @@ public class LoginActivity extends AppCompatActivity {
         relativeLayout = findViewById(R.id.login_layout);
 
         login = findViewById(R.id.btn_login);
+        //login.setBackgroundDrawable(getDrawable2(R.drawable.dialog_btn_next));
+        //login.setClickable(true);
+        //login.setOnTouchListener(new DrawableHotspotTouch((LollipopDrawable) login.getBackground()));
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,7 +76,11 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
         signup = findViewById(R.id.btn_signup);
+        //signup.setBackgroundDrawable(getDrawable2(R.drawable.signup_button));
+        //signup.setClickable(true);
+        //signup.setOnTouchListener(new DrawableHotspotTouch((LollipopDrawable) signup.getBackground()));
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -209,6 +216,10 @@ public class LoginActivity extends AppCompatActivity {
         textView.setTextColor(ContextCompat.getColor(LoginActivity.this, color));
         snackbar.show();
     }
+
+    /*public Drawable getDrawable2(int id){
+        return LollipopDrawablesCompat.getDrawable(getResources(), id, getTheme());
+    }*/
 
     @Override
     protected void onStart() {

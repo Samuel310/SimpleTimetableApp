@@ -10,11 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.appsforfun.sam.collegeapp310.R;
-import com.appsforfun.sam.collegeapp310.models.TimetableModel;
 import com.appsforfun.sam.collegeapp310.views.FragmentView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class Monday extends Fragment {
