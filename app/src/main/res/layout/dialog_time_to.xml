@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="To"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"/>
+
+    <TimePicker
+        android:id="@+id/tp_time_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_label"
+        android:layout_marginTop="10dp">
+
+    </TimePicker>
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tp_time_to"
+        android:src="@drawable/ic_check_circle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_btn_next"/>
+
+    <ImageButton
+        android:id="@+id/btn_previous"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tp_time_to"
+        android:src="@drawable/ic_cancel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_btn_previous"/>
+
+</RelativeLayout>

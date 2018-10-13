@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="Subject Code"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edt_subjectCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_label"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:inputType="text"/>
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edt_subjectCode"
+        android:src="@drawable/ic_arrow_forward"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_btn_next"/>
+
+    <ImageButton
+        android:id="@+id/btn_previous"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edt_subjectCode"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_btn_previous"/>
+
+</RelativeLayout>

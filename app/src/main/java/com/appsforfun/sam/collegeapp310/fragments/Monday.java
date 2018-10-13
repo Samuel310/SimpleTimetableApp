@@ -1,0 +1,56 @@
+package com.appsforfun.sam.collegeapp310.fragments;
+
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.appsforfun.sam.collegeapp310.R;
+import com.appsforfun.sam.collegeapp310.models.TimetableModel;
+import com.appsforfun.sam.collegeapp310.views.FragmentView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Monday extends Fragment {
+
+    private FragmentView fragmentView;
+
+    public Monday(){
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_monday, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        fragmentView = new FragmentView(getActivity(), view);
+        fragmentView.initiateProcess("monday");
+
+
+
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        if (getUserVisibleHint()) {
+            switch (item.getItemId()){
+                case 0:
+                    fragmentView.getHandleTimetableData().deleteTimetableData(item.getGroupId());
+                    return true;
+            }
+        }
+        return false;
+    }
+
+}
