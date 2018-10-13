@@ -5,4 +5,4 @@ All the timetable data is stored and managed online.
 The purpose of this app is to keep our timetable arranged and manage it easily wherever we are.
 This app also demonstrates the working concepts of firebase database.
 ## Download link
-[SimpleTimetable.apk](https://drive.google.com/file/d/13UZqbz008D0VBT8JELGkgV3pRt3ceJpR/view?usp=sharing){:target="_blank"}
+[SimpleTimetable.apk](https://drive.google.com/file/d/13UZqbz008D0VBT8JELGkgV3pRt3ceJpR/view?usp=sharing)
